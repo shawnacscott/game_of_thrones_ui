@@ -30,7 +30,26 @@ This is a scratch-my-own-itch project to allow me to see all the cards in play a
 
 ### Sample of API response for a single card:
 
-GET api/public/card/01001
+`$ curl -v http://thronesdb.com/api/public/card/01001`
+Trying 188.226.190.230...
+Connected to thronesdb.com (188.226.190.230) port 80 (#0)
+> GET /api/public/card/01001 HTTP/1.1
+> Host: thronesdb.com
+> User-Agent: curl/7.43.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Date: Sat, 12 Dec 2015 02:18:04 GMT
+< Server: Apache/2.4.7 (Ubuntu)
+< X-Powered-By: PHP/5.5.9-1ubuntu4.13
+< Cache-Control: max-age=600, public
+< Access-Control-Allow-Origin: *
+< Last-Modified: Thu, 13 Aug 2015 10:10:52 GMT
+< Vary: Accept-Encoding
+< Content-Length: 661
+< Content-Type: application/json
+<
+* Connection #0 to host thronesdb.com left intact
 
 {
    "pack_code":"core",
